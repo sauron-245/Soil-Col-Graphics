@@ -71,7 +71,7 @@ def generate_soil_profile(title, horizons, output_filename):
         # Depth labels on left
         for depth in (top, bottom):
             if depth not in drawn_depths:
-                depth_str = "150+ CM" if depth == 180 and h["name"] == "C" else f"{depth} CM"
+                depth_str = "150+ CM" if depth == 181 and h["name"] == "C" else f"{depth} CM"
                 ax.text(box_left - 0.3, depth, depth_str,
                         fontsize=9.5, fontweight='bold', ha='right', va='center')
                 drawn_depths.add(depth)
@@ -81,7 +81,7 @@ def generate_soil_profile(title, horizons, output_filename):
         if desc_lines:
             desc_text = "\n".join(desc_lines)
             ax.text(box_right + 0.3, top + height/2, desc_text,
-                    fontsize=8.5, fontweight='normal', ha='left', va='center', linespacing=1.25)
+                    fontsize=14, fontweight='normal', ha='left', va='center', linespacing=1.25)
             
     plt.tight_layout()
     plt.savefig(output_filename, bbox_inches='tight', dpi=300)
@@ -90,4 +90,4 @@ def generate_soil_profile(title, horizons, output_filename):
 
 
 # Run generator for each profile
-generate_soil_profile("Floodplains", profileData.profile_data, "Floodplains_Soil_Profile.png")
+generate_soil_profile("Site 1", profileData.profile_data, "p1.png")

@@ -1,69 +1,47 @@
 # Edit profile data for desired soil profile diagram
 profile_data = [
     {
-        "horizon": "A1",
+        "horizon": "A",
         "top": 0,
-        "bottom": 7,
+        "bottom": 20,
         "color": "10YR 2/2",
         "description": [
-            "10YR 2/2 (wet), 10YR 2/1 (dry)",
-            "Silty clay loam",
-            "Granular, medium strength"
+            "10YR 2/2, (wet), 10YR 2/2 (dry)",
+            "Loamy sand",
+            "Subangular blocky parting to subangular"
         ]
     },
     {
-        "horizon": "A2",
-        "top": 7,
+        "horizon": "B1",
+        "top": 20,
         "bottom": 40,
-        "color": "10YR 2/1",
+        "color": "10YR 2/2",
         "description": [
-            "10YR 2/1 (wet), 10YR 3/2 (dry)",
-            "Silty clay loam",
-            "Fine subangular blocky parting to granular"
+            "10YR 2/2 (wet), 10YR 2/2 (dry)",
+            "Sandy loam",
+            "Subangular blocky parting to blocky"
         ]
     },
     {
-        "horizon": "A3",
+        "horizon": "B2",
         "top": 40,
-        "bottom": 65,
-        "color": "7.5YR 2.5/1",
+        "bottom": 52,
+        "color": "10YR 3/3",
         "description": [
-            "7.5YR 2.5/1 (wet), 7.5YR 2.5/2 (dry)",
-            "Silt loam",
-            "Weak angular blocky parting to single grained or granular"
+            "10YR 3/3 (wet), 10YR 3/2 (dry)",
+            "Loamy sand",
+            "Weak subangular blocky parting to blocky"
         ]
     },
     {
-        "horizon": "A4",
-        "top": 65,
+        "horizon": "C",
+        "top": 52,
         "bottom": 100,
-        "color": "10YR 2/1",
+        "color": "10YR 4/4",
         "description": [
-            "10YR 2/1 (wet), 10YR 3/2 (dry)",
-            "Loam",
-            "Medium strong subangular blocky parting to fine granular"
-        ]
-    },
-    {
-        "horizon": "A5",
-        "top": 100,
-        "bottom": 115,
-        "color": "10YR 2/1",
-        "description": [
-            "10YR 2/1 (wet), 10YR 2/2 (dry)",
-            "Clay loam",
-            "Medium strong subangular blocky parting to fine granular"
-        ]
-    },
-    {
-        "horizon": "A6",
-        "top": 115,
-        "bottom": 150,
-        "color": "10YR 3/2",
-        "description": [
-            "10YR 3/2 (wet), 10YR 3/3 (dry)",
-            "Silty clay loam",
-            "Medium strong subangular blocky parting to fine granular"
+            "10YR 4/4 (wet), 10YR 3/2 (dry)",
+            "Sand",
+            "Granular gravel with some carbonates"
         ]
     }
 ]
